@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mighty Token - The Funniest Meme Token!</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cookie&family=Fredoka+One&family=Gloock:wght@400&display=swap"
+        rel="stylesheet"
+    />
+    <link rel="icon" href="https://example.com/images/favicon.ico" type="image/x-icon" />
+    <style>
+        body {
+            background: linear-gradient(135deg, #ff6b81, #fcff9f, #00d2ff);
+            font-family: "Gloock", sans-serif;
+            color: #222;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            animation: backgroundAnimation 15s infinite alternate;
+        }
+
+        @keyframes backgroundAnimation {
+            0% {
+                background-position: 0% 0%;
+            }
+            100% {
+                background-position: 100% 100%;
+            }
+        }
+
+        header {
+            background: #ffb300;
+            padding: 40px;
+            border-bottom: 8px dotted #42a5f5;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
+        }
+
+        h1 {
+            font-family: "Cookie", cursive;
+            font-size: 6rem;
+            letter-spacing: 6px;
+            text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+            animation: textShake 1.2s infinite alternate;
+            color: #d32f2f;
+        }
+
+        @keyframes textShake {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-5px) rotate(-1deg);
+            }
+        }
+
+        h2 {
+            font-family: "Fredoka One", cursive;
+            font-size: 4rem;
+            margin-top: 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+            color: #4caf50;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 15px;
+            position: relative;
+            animation: fadeIn 1s forwards;
+            opacity: 0;
+        }
+        
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+
+        .content-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 20px 0;
+        }
+
+        .meme-image {
+            width: 100%;
+            max-width: 500px; 
+            margin: 20px;
+            border: 8px solid #42a5f5;
+            border-radius: 20px;
+            transform: rotate(3deg);
+            transition: transform 0.3s;
+            animation: imageSwing 1s infinite alternate;
+        }
+
+        @keyframes imageSwing {
+            0% {
+                transform: rotate(2deg);
+            }
+            100% {
+                transform: rotate(-2deg);
+            }
+        }
+
+        .humor-explanation {
+            font-size: 1.5rem;
+            margin: 20px;
+            background: rgba(255, 216, 0, 0.9);
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .tokenomics {
+            background: rgba(255, 153, 0, 0.9);
+            border-radius: 15px;
+            padding: 40px;
+            margin: 20px 0;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .hot-buy {
+            background-color: #00c853;
+            color: white;
+            padding: 20px 50px;
+            border: none;
+            border-radius: 50px;
+            font-size: 2.5rem;
+            margin: 20px 0;
+            cursor: pointer;
+            box-shadow: 0 6px 30px rgba(0, 0, 0, 0.3);
+            transition: background 0.4s, transform 0.4s;
+            animation: pop 1s infinite alternate;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        @keyframes pop {
+            0% {
+                transform: scale(1);
+            }
+            100% {
+                transform: scale(1.05);
+            }
+        }
+
+        .hot-buy:hover {
+            background-color: #00bfae;
+            transform: scale(1.1);
+        }
+
+        footer {
+            background: rgba(255, 216, 0, 0.9);
+            color: #222;
+            text-align: center;
+            padding: 25px;
+            box-shadow: 0 -4px 30px rgba(0, 0, 0, 0.4);
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .social-button {
+            background-color: #00c853;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            color: white;
+            font-size: 2rem;
+            padding: 15px 30px;
+            margin: 10px;
+            text-decoration: none;
+            transition: background 0.4s, transform 0.4s;
+        }
+
+        .social-button:hover {
+            background-color: #00bfae;
+            transform: scale(1.1);
+        }
+
+        .flex-buttons {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .ca {
+            font-size: 1.8rem;
+            color: #d32f2f;
+            margin-top: 20px;
+            font-weight: bold;
+            background: #ffe082;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+            animation: pop 1s infinite alternate;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Mighty Token on the Eth! 💰</h1>
+        <h2>Ticker: $Mighty 🚀</h2>
+    </header>
+
+    <div class="container">
+        <div class="content-wrapper">
+            <img src="/images/image.jpg" class="meme-image" alt="Meme Example" />
+            <div class="humor-explanation">
+                <h3>🔥 Mighty Token 🔥</h3>
+                <p>
+                    Welcome to Mighty Token, the meme token that’s so awesome it’ll make your head spin! Here, laughter and profit are the names of the game! 
+                    Dive into a world where we take ridiculousness to new heights and turn your memes into gains! 
+                    Get ready for the wildest ride of your life, filled with crazy jokes and legendary memes that will slap you into happiness! 
+                    If you can meme it, we can dream it! Join us for laughter, chaos, and maybe some serious digital riches! 🤣🚀
+                </p>
+            </div>
+        </div>
+
+        <div>
+            <a
+              class="hot-buy"
+              href="https://app.uniswap.org/#/swap?inputCurrency=eth&outputCurrency=0xComingSoon"
+            >
+              🔥 Buy Now! 🔥
+            </a>
+        </div>
+
+        <div class="tokenomics">
+            <h3>Tokenomics 💰</h3>
+            <p style="font-size: 1.8rem"><strong>Total Supply:</strong> 100,000,000 $Mighty</p>
+            <p style="font-size: 1.8rem"><strong>Tax:</strong> 0% Buy/Sell Tax</p>
+            <p style="font-size: 1.8rem"><strong>LP Burned:</strong> 100%</p>
+        </div>
+
+        <div class="ca">
+            <h3>Contract Address: 0xComingSoon</h3>
+        </div>
+    </div>
+
+    <footer>
+        <h3>🔥 Join Community 🔥</h3>
+        <div class="flex-buttons">
+            <a
+              class="social-button"
+              href="https://www.dextools.io/app/en/ether/pair-explorer/0xComingSoon"
+            >Dextools</a>
+            <a
+              class="social-button"
+              href="https://dexscreener.com/ethereum/0xComingSoon"
+            >Dexscreener</a>
+        </div>
+        <p style="font-size: 1.4rem; color: #222; text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);">
+            💥 © 2025 Mighty Token! The wildest ride in crypto! Join or cry in the corner! 💥
+        </p>
+    </footer>
+
+    <script>
+        const elements = document.querySelectorAll(
+            ".humor-explanation, .tokenomics, .social-button, .hot-buy"
+        );
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("animate");
+                    observer.unobserve(entry.target);
+                }
+            });
+        });
+
+        elements.forEach((element) => {
+            observer.observe(element);
+        });
+    </script>
+</body>
+</html>
